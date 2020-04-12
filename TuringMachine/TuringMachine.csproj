@@ -57,9 +57,12 @@
     <Content Include="Commands\commands_myl.txt" />
     <Content Include="Commands\commands_sub.txt" />
     <Content Include="Commands\commands_trans.txt" />
+    <Content Include="Protocols\protocol_add.txt" />
+    <Content Include="Protocols\protocol_add2.txt" />
+    <Content Include="Protocols\protocol_myl.txt" />
+    <Content Include="Protocols\protocol_sub.txt" />
+    <Content Include="Protocols\protocol_trans.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Protocols\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
