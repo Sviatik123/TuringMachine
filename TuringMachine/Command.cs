@@ -2,31 +2,31 @@
 {
     class Command
     {
-        public string CurrState { get; set; }
-        public string CurrSymb { get; set; }
+        public string OldState { get; set; }
+        public char OldSymb { get; set; }
         public string NewState { get; set; }
-        public string NewSymb { get; set; }
+        public char NewSymb { get; set; }
         public char Direction { get; set; }
         public Command()
         {
 
         }
-        public Command(string currState, string currSymb, string newState, string newSymb, char direction)
+        public Command(string oldState, char oldSymb, string newState, char newSymb, char direction)
         {
-            CurrState = currState;
-            CurrSymb = currSymb;
+            OldState = oldState;
+            OldSymb = oldSymb;
             NewState = newState;
-            NewSymb = NewSymb;
+            NewSymb = newSymb;
             Direction = direction;
         }
         public Command(string data)
         {
             string[] command = data.Split();
-            CurrState = command[0];
-            CurrSymb = command[1];
-            NewState = command[5];
-            NewSymb = command[3];
-            Direction = command[4][0];
+            OldState = command[1];
+            OldSymb = command[0][0];
+            NewState = command[4];
+            NewSymb = command[3][0];
+            Direction = command[5][0];
         }
     }
 }

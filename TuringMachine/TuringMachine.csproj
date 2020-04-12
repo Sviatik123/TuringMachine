@@ -44,11 +44,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Command.cs" />
+    <Compile Include="Machine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Commands\commands_add.txt" />
+    <Content Include="Commands\commands_add2.txt" />
+    <Content Include="Commands\commands_myl.txt" />
+    <Content Include="Commands\commands_sub.txt" />
+    <Content Include="Commands\commands_trans.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Protocols\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
