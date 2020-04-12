@@ -21,7 +21,7 @@ namespace TuringMachine
 
             Machine m1 = new Machine();
             m1.ParseCommands("../../Commands/commands_sub.txt");
-            Console.WriteLine(m1.Run("111-111111"));
+            Console.WriteLine(m1.Run("1111111111-111111"));
             m1.PrintProtocol("../../Protocols/protocol_sub.txt");
 
             // Множення в унарній системі
@@ -42,7 +42,7 @@ namespace TuringMachine
 
             Machine m4 = new Machine();
             m4.ParseCommands("../../Commands/commands_trans.txt");
-            Console.WriteLine(m4.Run("1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"));
+            Console.WriteLine(m4.Run("1111111111111111111111111111111111111111111111111111111111111111111111"));
             m4.PrintProtocol("../../Protocols/protocol_trans.txt");
         }
     }
